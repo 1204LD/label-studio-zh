@@ -4,9 +4,12 @@
 
 > 一句话原理：Label Studio 前端没有 i18n 框架（`USE_I18N = False`，文案全部硬编码在 React 组件里），所以本补丁通过**构建期替换前端构建产物中的字符串字面量** + **替换 Django 模板文字** 来实现汉化，词库约 1400 条。
 
+![登录页汉化效果](docs/img/login.png)
+
 - 适配版本：`heartexlabs/label-studio:1.23.0`（其他版本可通过 `--build-arg BASE_IMAGE=...` 尝试）
 - 改动位置：`/label-studio/web/dist/**/*.js`、`/label-studio/label_studio/**/templates/**/*.html`
 - 不包含内容：Label Studio 源码、构建产物、二进制镜像（本仓库只有补丁脚本 + 词库）
+- 实测：13/13 前端 chunk 替换后仍可被 `@babel/parser` 完整解析；前端中文字符 14227 个；仍为英文的显示位文案 73 条（多为日期格式、CSS 上下文、示例存储桶名等非界面文案）
 
 ---
 

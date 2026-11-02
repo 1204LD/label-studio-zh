@@ -59,5 +59,12 @@
   "Email": "邮箱",
   "Log In": "登录",
   "Heidi's down": "Heidi 服务不可用",
-  "User photo": "用户照片"
+  "User photo": "用户照片",
+  "Did you know?": "你知道吗？",
+  "Learn more": "了解更多",
+  "See all templates": "查看全部模板",
+  "You can sync data from all popular cloud storage providers to collect new items for labeling as they are uploaded, and return the annotation results to train and continuously improve models.": "你可以从各类主流云存储同步数据，新文件上传后会持续采集为待标注任务，标注结果还能回传用于训练并持续优化模型。",
+  "There's an Enterprise version of Label Studio packed with more features and automation to label data faster while ensuring the highest quality.": "Label Studio 还提供企业版，内置更多功能与自动化能力，可以更快完成标注并保证更高质量。",
+  "Label Studio has dozens of pre-built templates for all data types you can use to configure your labeling UI, from image classification to sentiment analysis to supervised LLM fine-tuning. ": "Label Studio 内置数十种标注模板，覆盖图像分类、情感分析到 LLM 有监督微调等各类场景，可直接用于配置标注界面。",
+  "Label Studio now has a Starter Cloud offering optimized for small teams and projects.": "Label Studio 现已推出 Starter Cloud 方案，专为小型团队与项目优化。"
 }
