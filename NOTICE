@@ -1,0 +1,22 @@
+Label Studio 简体中文汉化补丁 (label-studio-zh)
+Copyright 2026 1204LD
+
+本仓库由以下两部分组成，均以 Apache License 2.0 发布：
+
+1. 补丁脚本（scripts/）——用于在已安装的 Label Studio 实例上替换界面文案；
+2. 翻译词库（dict/）——面向 Label Studio 1.23.0 界面文案的简体中文对照表。
+
+本仓库不包含 Label Studio 的源代码、构建产物或容器镜像。
+
+--------------------------------------------------------------------
+关于 Label Studio
+
+Label Studio is an open source data labeling tool.
+Copyright (c) 2020-2025 HumanSignal, Inc. and contributors.
+Licensed under the Apache License, Version 2.0.
+https://github.com/HumanSignal/label-studio
+
+"Label Studio" 是 HumanSignal, Inc. 的商标。本项目为第三方社区汉化补丁，
+与 HumanSignal 无隶属关系，也未获得其背书。使用、分发或商业部署前，请自行确认
+符合 Label Studio 的许可证与商标政策。
+--------------------------------------------------------------------

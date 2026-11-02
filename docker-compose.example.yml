@@ -1,0 +1,23 @@
+# 示例：用汉化镜像替换官方镜像，其余配置保持不变
+# 使用：docker compose -f docker-compose.example.yml up -d
+
+services:
+  label-studio-zh:
+    build:
+      context: .
+      args:
+        BASE_IMAGE: heartexlabs/label-studio:1.23.0
+    image: label-studio-zh:1.23.0
+    container_name: label-studio-zh
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/label-studio/data
+    environment:
+      SSRF_PROTECTION_ENABLED: "true"
+      LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED: "true"
+      LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT: /label-studio/data/files
+      LABEL_STUDIO_DISABLE_UPDATE_CHECK: "true"
+      COLLECT_ANALYTICS: "false"
+      LABEL_STUDIO_SECRET_KEY: change_me
+    restart: unless-stopped

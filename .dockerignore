@@ -1,0 +1,5 @@
+# 构建上下文只需要脚本与词库
+*
+!scripts/
+!dict/
+!Dockerfile
